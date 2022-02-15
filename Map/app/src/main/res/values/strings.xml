@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Map</string>
+    <string name="welcome">Welcome!</string>
 </resources>

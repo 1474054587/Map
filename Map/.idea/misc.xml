@@ -6,7 +6,6 @@
         <entry key="..\:/Android/AndroidStudioProjects/Map/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26979166666666665" />
         <entry key="..\:/Android/AndroidStudioProjects/Map/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
         <entry key="..\:/Android/AndroidStudioProjects/Map/app/src/main/res/layout/activity_main.xml" value="0.1598731884057971" />
-        <entry key="..\:/Android/AndroidStudioProjects/Map/app/src/main/res/layout/activity_search.xml" value="0.25364583333333335" />
         <entry key="..\:/Android/AndroidStudioProjects/Map/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26979166666666665" />
         <entry key="..\:/Android/AndroidStudioProjects/Map/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26979166666666665" />
         <entry key="..\:/Android/git/Map/Map/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2564814814814815" />
@@ -18,9 +17,10 @@
         <entry key="..\:/Android/git/Map/Map/app/src/main/res/drawable/launcher_foreground.xml" value="0.2564814814814815" />
         <entry key="..\:/Android/git/Map/Map/app/src/main/res/drawable/search_btn.xml" value="0.26979166666666665" />
         <entry key="..\:/Android/git/Map/Map/app/src/main/res/layout/activity_main.xml" value="0.357032457496136" />
-        <entry key="..\:/Android/git/Map/Map/app/src/main/res/layout/activity_poi.xml" value="0.357032457496136" />
+        <entry key="..\:/Android/git/Map/Map/app/src/main/res/layout/activity_poi.xml" value="0.3944636678200692" />
         <entry key="..\:/Android/git/Map/Map/app/src/main/res/layout/activity_poiactivity.xml" value="0.25364583333333335" />
         <entry key="..\:/Android/git/Map/Map/app/src/main/res/layout/activity_search.xml" value="0.152" />
+        <entry key="..\:/Android/git/Map/Map/app/src/main/res/layout/activity_start.xml" value="0.176" />
         <entry key="..\:/Android/git/Map/Map/app/src/main/res/layout/recyclerview_item.xml" value="0.25364583333333335" />
         <entry key="..\:/Android/git/Map/Map/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2564814814814815" />
         <entry key="..\:/Android/git/Map/Map/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2564814814814815" />

@@ -22,6 +22,15 @@ import com.amap.api.navi.AmapPageType;
 import com.amap.api.services.core.LatLonPoint;
 import com.amap.api.services.help.Tip;
 
+/**
+ * @author : created by JTY
+ * 邮箱 : 1474054587@qq.com
+ * 描述 : 定位页面
+ * 功能 : 定位搜索页面传入位置
+ *       点击 btn_navigation 开始导航
+ *       点击 btn_location 镜头回到定位坐标
+ *       定位当前位置
+ */
 public class POIActivity extends AppCompatActivity {
 
     protected static Tip tip;
@@ -37,20 +46,40 @@ public class POIActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_poi);
+        //标题改为定位名称
         setTitle(tip.getName());
+        //初始化地图容器、组件
         mMapView = findViewById(R.id.map_poi);
         mMapView.onCreate(savedInstanceState);
         aMap = mMapView.getMap();
+        //获取定位坐标
         latLng = new LatLng(tip.getPoint().getLatitude(), tip.getPoint().getLongitude());
+        //镜头移动到定位坐标
         aMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,18f));
+        //初始化定位蓝点
         myLocationStyle = new MyLocationStyle();
+        //定位蓝点设置为：连续定位、蓝点不会移动到地图中心点，定位点依照设备方向旋转，并且蓝点会跟随设备移动
         myLocationStyle.myLocationType(MyLocationStyle.LOCATION_TYPE_LOCATION_ROTATE_NO_CENTER);
+        //每1000毫秒重新定位
         myLocationStyle.interval(1000);
+        //设置定位蓝点
         aMap.setMyLocationStyle(myLocationStyle);
         aMap.getUiSettings().setMyLocationButtonEnabled(true);
         aMap.setMyLocationEnabled(true);
     }
 
+    /**
+     * 点击 btn_location 镜头回到定位坐标
+     * @param view
+     */
+    public void location(View view){
+        aMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,18f));
+    }
+
+    /**
+     * 点击 btn_navigation 开始导航
+     * @param view
+     */
     public void navigation(View view){
         end = new Poi(tip.getName(),latLng,tip.getPoiID());
         // 导航组件参数配置
