@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:onClick="gotoSearch"
+        android:background="@color/white"
+        android:backgroundTint="@color/btn_background"
+        android:foreground="@drawable/search"
+        android:foregroundTint="@color/btn_foreground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"/>
+    <Button
+        android:id="@+id/btn_navigation"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:onClick="navigation"
+        android:background="@color/white"
+        android:backgroundTint="@color/btn_background"
+        android:foreground="@drawable/navi"
+        android:foregroundTint="@color/btn_foreground"
+        app:layout_constraintTop_toBottomOf="@id/btn_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintLeft_toLeftOf="@id/btn_search"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
