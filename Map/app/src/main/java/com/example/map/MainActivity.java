@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
         }
         //初始化定位蓝点
         myLocationStyle = new MyLocationStyle();
-        //每1000毫秒重新定位
-        myLocationStyle.interval(1000);
+        //每5000毫秒重新定位
+        myLocationStyle.interval(5000);
         //设置定位蓝点
         aMap.setMyLocationStyle(myLocationStyle);
         aMap.getUiSettings().setMyLocationButtonEnabled(true);
